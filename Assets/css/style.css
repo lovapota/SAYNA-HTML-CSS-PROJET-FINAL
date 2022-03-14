@@ -1,15 +1,15 @@
 /*Variable de couleur*/
 :root{
-    --primary-color: #d35649;
-    --primary-gray: #98a5a5;
-    --primary-blue: #509bd7;
+    --light-gray: #eee; 
     --gray-footer: #1f1f1f;
     --gray-footer-btn: #444;
+    --primary-gray: #98a5a5;
+    --primary-blue: #509bd7;
+    --primary-color: #d35649;
     --primary-purple: #575a89;
-    --light-gray: #eee; 
 }
 /*general*/
-/* .grand{
+.grand{
     border: 2px solid green;
 }
 .petit{
@@ -18,9 +18,9 @@
 .tpetit{
     border: 2px solid yellow;
 }
-.small{
+.kely{
     border: 1px solid blue;
-} */
+}
 /*Header*/
 header{
     background-color: var(--primary-color);
@@ -39,38 +39,37 @@ header h1{
 }
 /*Premiere*/
 .su{
-    background-image: url(../Images/group-1.jpg);
+    text-align: center;
     background-size: cover;
     background-position: center;
-    text-align: center;
-    padding: 5% 0 5% 0;
+    background-image: url(../Images/group-1.jpg);
 }
-.centre h1{
-    font-variant: small-caps;
+.su h1{
     color: white;
+    font-variant: small-caps;
     text-shadow: 0.08em 0.07em black;
 }
 .centre1{
-    padding: 2% 0;
     width: 60%;
     margin: auto;
+    padding: 2% 0;
     background-color: #98a5a59a;
 }
 #plage{
     padding: 0 36% 0 0;
 }
 .boutton{
-    background-color: var(--primary-color);
     border: none;
-    color: var(--light-gray);
     border-radius: 3px;
+    color: var(--light-gray);
+    background-color: var(--primary-color);
 }
 .how{
+    border: none;
+    padding: 0.5%;
+    font-weight: 700;
+    border-radius: 3px;
    background-color: #98a5a58c; 
-   font-weight: 700;
-   border-radius: 3px;
-   border: none;
-   padding: 0.5%;
 }
 /*deuxieme*/
 .deuxieme{
@@ -78,8 +77,8 @@ header h1{
     text-align: center;
 }
 .deuxieme h1{
-    color: var(--primary-color);
     margin-bottom: 2%;
+    color: var(--primary-color);
 }
 .text{
     display: flex;
@@ -95,8 +94,8 @@ header h1{
     background-color: var(--primary-color);
 }
 .text1{
-    color: var(--light-gray);
     width: 70%;
+    color: var(--light-gray);
 }
 .text1 .near{
     color: var(--primary-color);
@@ -106,48 +105,84 @@ header h1{
     background-color: var(--primary-gray);
 }
 .text1 .connect{
-    color: var(--primary-gray);
     border: none;
+    color: var(--primary-gray);
 }
 .Spred{
     background-color: var(--primary-blue);
 }
 .sary{
+    width: 30%;
     display: flex;
     justify-content: center;
-    width: 30%;
 }
 .sary img{
     margin: 3% 0;
-    border-radius: 50%;
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+}
+.mobile1{
+    background-color: var(--primary-gray);
+}
+.mobile2{
+    background-color: var(--primary-color);
+}
+.mobile3{
+    background-color: #509bd7;
+}
+.sary1{
+    padding: 20% 10%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(../Images/group-4.jpg);
+}
+.sary2{
+    padding: 20% 10%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(../Images/group-2.jpg);
+}
+.sary3{
+    padding: 20% 10%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(../Images/group-3.jpg);
+}
+.ta{
+    color: var(--primary-gray);
+}
+.ti{
+    color: var(--primary-color);
 }
 /*Footer*/
 .foot{
-    background-color:black;
     display: flex;
-    justify-content: center;
     padding: 4% 0 1% 0;
+    justify-content: center;
+    background-color:black;
 }
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
     width: 8%;
+    display: flex;
     border-radius: 50%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
 }
 .menu{
-    color: white;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-    display: flex;
-    justify-content: center;
     width: 30%;
-    padding: 1% 0;
     margin: 2% 0;
+    padding: 1% 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 .pied{
     display: flex;
@@ -155,34 +190,34 @@ header h1{
 }
 .info{
     width: 33.33%;
-    text-align: center;
     color: white;
+    text-align: center;
 }
 #mail{
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid grey;
     padding: 2% 0;
+    border: 1px solid grey;
+    background-color: rgba(0, 0, 0, 0);
 }
 .send{
     color: white;
-    background-color:var(--gray-footer-btn);
-    border : 1px solid white;
+    font-weight: 700;
     border-radius: 5px;
     padding: 10px 20px;
-    font-weight: 700;
+    border : 1px solid white;
+    background-color:var(--gray-footer-btn);
 }
 .lien{
-    color: var(--primary-color);
-    text-decoration: none;
     font-weight: 400;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 .info span{
     color: var(--primary-color);
 }
 .pied{
-    background-color: var(--gray-footer);
     padding: 2% 0;
     color: var(--primary-gray);
+    background-color: var(--gray-footer);
 }
 .small img{
     width: 100%;
@@ -199,28 +234,6 @@ header h1{
         justify-content: center;
     }
     .deuxieme{
-        display: none;
-    }
-    .troisieme{
-        position: relative;
-    }
-    .sary{
-        background-color: saddlebrown;
-        width: 100%;
-    }
-    .sary img{
-        object-fit: cover;
-        border-radius: 15%;
-        margin: 2%;
-    }
-    .text1{
-        width: 80%;
-        position: absolute;
-        bottom: 50%;
-        transform: translate(15%);
-        color: white;
-    }
-    .foot{
         display: none;
     }
 }

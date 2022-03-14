@@ -1,17 +1,17 @@
 /*Variable de couleur*/
 :root{
-    --primary-color: #d35649;
-    --primary-gray: #98a5a5;
-    --primary-blue: #509bd7;
+    --light-gray: #eee; 
     --gray-footer: #1f1f1f;
     --gray-footer-btn: #444;
+    --primary-gray: #98a5a5;
+    --primary-blue: #509bd7;
+    --primary-color: #d35649;
     --primary-purple: #575a89;
-    --light-gray: #eee; 
 }
 .donne{
-    display: flex;
     width: 80%;
     margin: auto;
+    display: flex;
     justify-content: space-between;
 }
 .filter{
@@ -21,26 +21,26 @@
     background-color:var(--primary-gray) ;
 }
 .enter{
-    text-align: left;
     width: 15%;
+    text-align: left;
     margin-right: 2%;
 }
 .feno{
+    border: 0;
     width: 100%;
     border-radius: 3px;
-    border: 0;
 }
 .re{
-    background-color: var(--primary-blue);
     border: none;
-    border-radius: 6px;
     color: white;
+    border-radius: 6px;
+    background-color: var(--primary-blue);
 }
 .clear{
-    background-color:orange;
     border: none;
-    border-radius: 6px;
     color: white;
+    border-radius: 6px;
+    background-color:orange;
 }
 .fita{
     width: 80%;
@@ -53,13 +53,13 @@ figure{
     position: relative;
 }
 figcaption{
+    top: 0;
     width: 100%;
+    padding: 1% 0;
+    text-align: center;
+    position: absolute;
     color: var(--light-gray);
     text-shadow: 0.05em 0.05em var(--light-gray);
-    position: absolute;
-    top: 0;
-    text-align: center;
-    padding: 1% 0;
 }
 .soa{
     text-align: center;

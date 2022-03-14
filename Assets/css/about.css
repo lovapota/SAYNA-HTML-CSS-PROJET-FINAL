@@ -1,11 +1,12 @@
+/*Variable de couleur*/
 :root{
-    --primary-color: #d35649;
-    --primary-gray: #98a5a5;
-    --primary-blue: #509bd7;
+    --light-gray: #eee; 
     --gray-footer: #1f1f1f;
     --gray-footer-btn: #444;
+    --primary-gray: #98a5a5;
+    --primary-blue: #509bd7;
+    --primary-color: #d35649;
     --primary-purple: #575a89;
-    --light-gray: #eee; 
 }
 .sunny{
     text-align: center;
@@ -16,18 +17,18 @@ h1{
 }
 
 .soleil{
-    border: 2px solid blue;
-    display: flex;
     width: 80%;
     margin: auto;
+    display: flex;
+    border: 2px solid blue;
 }
 .location{
     width: 50%;
     margin: 0.5% 0% 0.5% 4%;
 }
 .location span{
-    color: var(--primary-blue);
     font-weight:600 ;
+    color: var(--primary-blue);
 }
 .emploi{
     padding: 3% 0 ;
@@ -36,12 +37,12 @@ h1{
 }
 .but{
     width: 5%;
-    background-color: var(--primary-blue);
     border: none;
-    padding: 1% 0.5%;
-    margin: 0.5% 0% 0.5% 84%;
     color: white;
+    padding: 1% 0.5%;
     border-radius: 2px;
+    margin: 0.5% 0% 0.5% 84%;
+    background-color: var(--primary-blue);
 } 
 .lova{
     flex-wrap: wrap;
@@ -61,8 +62,8 @@ iframe{
         display: block;
     }
     .sary{
+        width: 100%;
         display: block;
         background-color: saddlebrown;
-        width: 100%;
     }
 }
