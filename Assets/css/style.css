@@ -1,0 +1,226 @@
+/*Variable de couleur*/
+:root{
+    --primary-color: #d35649;
+    --primary-gray: #98a5a5;
+    --primary-blue: #509bd7;
+    --gray-footer: #1f1f1f;
+    --gray-footer-btn: #444;
+    --primary-purple: #575a89;
+    --light-gray: #eee; 
+}
+/*general*/
+/* .grand{
+    border: 2px solid green;
+}
+.petit{
+    border: 2px solid red;
+}
+.tpetit{
+    border: 2px solid yellow;
+}
+.small{
+    border: 1px solid blue;
+} */
+/*Header*/
+header{
+    background-color: var(--primary-color);
+}
+header h1{
+    color: var(--light-gray);
+    text-shadow: 0.05em 0.05em 0.05em var(--primary-blue)
+}
+.bar h2{
+    color: var(--light-gray);
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/*Premiere*/
+.su{
+    background-image: url(../Images/group-1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+.centre h1{
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 0.08em 0.07em black;
+}
+.centre1{
+    padding: 2% 0;
+    width: 60%;
+    margin: auto;
+    background-color: #98a5a59a;
+}
+#plage{
+    padding: 0 36% 0 0;
+}
+.boutton{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--light-gray);
+    border-radius: 3px;
+}
+.how{
+   background-color: #98a5a58c; 
+   font-weight: 700;
+   border-radius: 3px;
+   border: none;
+   padding: 0.5%;
+}
+/*deuxieme*/
+.deuxieme{
+    padding: 2%;
+    text-align: center;
+}
+.deuxieme h1{
+    color: var(--primary-color);
+    margin-bottom: 2%;
+}
+.text{
+    display: flex;
+}
+.contenu{
+    width: 50%;
+}
+/*Troisieme*/
+.troisieme{
+    display: flex;
+}
+.Near{
+    background-color: var(--primary-color);
+}
+.text1{
+    color: var(--light-gray);
+    width: 70%;
+}
+.text1 .near{
+    color: var(--primary-color);
+    border: none;
+}
+.Connect{
+    background-color: var(--primary-gray);
+}
+.text1 .connect{
+    color: var(--primary-gray);
+    border: none;
+}
+.Spred{
+    background-color: var(--primary-blue);
+}
+.sary{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.sary img{
+    margin: 3% 0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+/*Footer*/
+.foot{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    padding: 4% 0 1% 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: 8%;
+    border-radius: 50%;
+    text-align: center;
+}
+.menu{
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 1% 0;
+    margin: 2% 0;
+}
+.pied{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    width: 33.33%;
+    text-align: center;
+    color: white;
+}
+#mail{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid grey;
+    padding: 2% 0;
+}
+.send{
+    color: white;
+    background-color:var(--gray-footer-btn);
+    border : 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+.lien{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+.info span{
+    color: var(--primary-color);
+}
+.pied{
+    background-color: var(--gray-footer);
+    padding: 2% 0;
+    color: var(--primary-gray);
+}
+.small img{
+    width: 100%;
+}
+@media screen and (max-width:765px) {
+    header{
+        display: block;
+    }
+    .laogo {
+       text-align: center;
+    }
+    .bar{
+        display: flex;
+        justify-content: center;
+    }
+    .deuxieme{
+        display: none;
+    }
+    .troisieme{
+        position: relative;
+    }
+    .sary{
+        background-color: saddlebrown;
+        width: 100%;
+    }
+    .sary img{
+        object-fit: cover;
+        border-radius: 15%;
+        margin: 2%;
+    }
+    .text1{
+        width: 80%;
+        position: absolute;
+        bottom: 50%;
+        transform: translate(15%);
+        color: white;
+    }
+    .foot{
+        display: none;
+    }
+}
