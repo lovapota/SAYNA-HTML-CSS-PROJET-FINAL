@@ -21,6 +21,10 @@
 .kely{
     border: 1px solid blue;
 }
+svg{
+    width: 20pt;
+    height: 20pt;
+}
 /*Header*/
 header{
     background-color: var(--primary-color);
@@ -36,6 +40,9 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: end;
+}
+.bar svg{
+    fill: var(--light-gray);
 }
 /*Premiere*/
 .su{
@@ -219,12 +226,21 @@ header h1{
     color: var(--primary-gray);
     background-color: var(--gray-footer);
 }
+.pied svg{
+    width: 12pt;
+    height: 12pt;
+    fill: var(--primary-gray);
+}
 .small img{
     width: 100%;
 }
 @media screen and (max-width:765px) {
     header{
         display: block;
+    }
+    .bar svg{
+        width: 30pt;
+        height: 30pt;
     }
     .laogo {
        text-align: center;

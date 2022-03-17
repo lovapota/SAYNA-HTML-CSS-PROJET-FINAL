@@ -15,6 +15,11 @@
 h1{
     color: var(--primary-color);
 }
+h1 svg{
+    width: 25pt;
+    height: 25pt;
+    fill: var(--primary-color);
+}
 
 .soleil{
     width: 80%;
@@ -48,6 +53,9 @@ h1{
     flex-wrap: wrap;
     margin-bottom: 2%;
     justify-content: space-evenly;
+}
+.lova svg{
+    fill: var(--primary-blue);
 }
 .map{
     text-align: center;
