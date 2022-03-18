@@ -8,27 +8,32 @@
     --primary-color: #d35649;
     --primary-purple: #575a89;
 }
+/*Style du contenue du site*/
 .donne{
-    width: 80%;
+    width: 90%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 .filter{
     margin: 3% 0;
     padding: 2% 0;
     text-align: center;
-    background-color:var(--primary-gray) ;
+    background-color:var(--light-gray) ;
+}
+.filter h1{
+    font-weight: 700;
+    color: var(--primary-gray);
 }
 .enter{
-    width: 15%;
     text-align: left;
-    margin-right: 2%;
+}
+.enter label{
+    font-weight: 500;
+    font-size: medium;
 }
 .feno{
-    border: 0;
     width: 100%;
     border-radius: 3px;
+    border: 1px solid var(--primary-gray);
 }
 .re{
     border: none;
@@ -46,7 +51,7 @@
     width: 80%;
     margin: auto;
 }
-.mx-2{
+.bg{
     background-color: var(--primary-color);
 }
 figure{
@@ -56,8 +61,8 @@ figcaption{
     top: 0;
     width: 100%;
     padding: 1% 0;
-    text-align: center;
     position: absolute;
+    text-align: center;
     color: var(--light-gray);
     text-shadow: 0.05em 0.05em var(--light-gray);
 }
@@ -70,14 +75,18 @@ figcaption{
     header{
         display: block;
     }
-    .fita{
-        display: block;
-    }
     .tpetit{
         width: 50%;
         margin: auto ;
     }
     .grand{
         text-align: center;
+    }
+    .donne{
+        width: 100%;
+    }
+    .re, .clear {
+        font-size: small;
+        width: auto;
     }
 }

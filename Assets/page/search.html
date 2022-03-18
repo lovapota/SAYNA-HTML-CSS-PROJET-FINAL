@@ -21,7 +21,7 @@
 </head>
 <body>
 <!--Header avec barre de navigation-->
-    <header class="row">
+    <header class="d-flex flex-md-row flex-column">
         <div class="col-md-3 d-md-flex laogo align-items-end">
             <img src="../Images/group-2.svg" alt="logo client" class="img-fluid" width="35%">
             <h1 class="fs-2">[Events]</h1>
@@ -68,52 +68,59 @@
 <!--main-->
     <main class="contenair-fluid">
 <!--Premiere partie entrer de donne-->
-        <div class="grand filter">
-            <h1 class="fs-2">Filter by location,host,subject,date,daytime:</h1>
-            <div class="petit donne">
-                <div class="tpetit enter">
+        <div class="filter">
+            <h1 class="fs-2">Filter by location, host, subject, date, daytime:</h1>
+<!--Entre de donne-->
+            <div class="donne row justify-content-between flex-column flex-md-row">
+                <div class="col-md-1 enter">
                     <label class="mb-1">Location</label>
                     <input class="feno" type="text">
                 </div>
-                <div class="tpetit enter">
-                    <h5 class="mb-1 fs-6">Host</h5>
+                <div class="col-md-1 enter">
+                    <label class="mb-1">Host</label>
                     <input class="feno" type="text">
                 </div>
-                <div class="tpetit enter">
-                    <h5 class="mb-1 fs-6">Subject</h5>
-                    <input class="feno" type="text">
+                <div class="row col-md-3">
+                    <div class="col-4 enter">
+                        <label class="mb-1">Subject</label>
+                        <input class="feno" type="text">
+                    </div>
+                    <div class="col-8 enter">
+                        <label class="mb-1">Initial Date</label>
+                        <input class="feno" type="date">
+                    </div>
                 </div>
-                <div class="tpetit enter">
-                    <h5 class="mb-1 fs-6">Initial Date</h5>
-                    <input class="feno" type="date">
+                <div class="row col-md-7 col-8 flex-nowrap justify-content-between align-intems-end">
+                    <div class="col-3 enter">
+                        <label class="mb-1">Final Date</label>
+                        <input class="feno" type="date">
+                    </div>
+                    <div class="col-3 enter">
+                        <label class="mb-1">Daytime</label>
+                        <select name="Choose" id="" class="w-100">
+                            <option value="0">Choose ...  </option>
+                        </select>
+                    </div>
+                    <div class="row col-6 align-items-end justify-content-around">
+                        <button type="button" class="btn re col-4">Search</button>
+                        <button type="button" class="btn clear col-6"><i class="bi bi-brush-fill"></i> Clear Filter</button>
+                    </div>
                 </div>
-                <div class="tpetit enter">
-                    <h5 class="mb-1 fs-6">Final Date</h5>
-                    <input class="feno" type="date">
-                </div>
-                <div class="tpetit enter">
-                    <h5 class="mb-1 fs-6">Daytime</h5>
-                    <select name="Choose" id="">
-                        <option value="0">Choose ...  </option>
-                    </select>
-                </div>
-                    <button class="btn re align-self-end me-2">Search</button>
-                    <button class="btn clear align-self-end w-25 px-0"><i class="bi bi-brush-fill"></i> Clear Filter</button>
-            </div>
+            </div><!--end entre donne-->
         </div><!--end premiere partie-->
 <!--Deuxieme partie Resultat de recherche-->
-        <div class="grand soa py-4">
+        <div class="soa py-4">
             <h1 class="fs-4 mb-4">Search Result Found 7 [Events] Nearby</h1>
-            <div class="petit bar fita">
-                <figure class="tpetit mx-2">
+            <div class="row flex-md-row flex-md-nowrap flex-column fita justify-content-around">
+                <figure class="col-3 bg mb-2">
                     <img src="../Images/group-2.svg" alt="" class="img-fluid">
                     <figcaption>go to [gathering] example</figcaption>
                 </figure>
-                <figure class="tpetit mx-2">
+                <figure class="col-3 bg mb-2">
                     <img src="../Images/group-2.svg" alt="" class="img-fluid">
                     <figcaption>go to [gathering] example</figcaption>
                 </figure>
-                <figure class="tpetit mx-2">
+                <figure class="col-3 bg">
                     <img src="../Images/group-2.svg" alt="" class="img-fluid">
                     <figcaption>go to [gathering] example</figcaption>
                 </figure>
@@ -160,8 +167,8 @@
             </div>
         </div><!--end info-->
     <!--Footer avec les icones-->
-        <div class="pied row ">
-            <div class="icone row col-6">
+        <div class="pied d-flex">
+            <div class="icone d-flex">
                 <div class="col-1 mx-md-4 mx-1">
                     <i class="bi bi-facebook"></i>
                 </div>
@@ -182,7 +189,7 @@
                     <i class="bi bi-linkedin"></i>
                 </div>
             </div>
-            <div class="col-6 d-flex flex-nowrap copy justify-content-end text-end">
+            <div class="d-flex flex-nowrap copy justify-content-end text-end">
                 <p>&copy; 2022 [Events],Inc.All rights reserved </p>
             </div>
         </div><!--end icone-->

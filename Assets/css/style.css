@@ -234,6 +234,7 @@ header h1{
 .small img{
     width: 100%;
 }
+/*Rsponsive*/
 @media screen and (max-width:765px) {
     header{
         display: block;

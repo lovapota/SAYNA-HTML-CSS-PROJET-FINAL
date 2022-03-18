@@ -8,28 +8,25 @@
     --primary-color: #d35649;
     --primary-purple: #575a89;
 }
-.sunny{
-    text-align: center;
-    box-shadow: 0 0 0.5em 0.05em black; 
-}
+/*Propriete du site*/
 h1{
     color: var(--primary-color);
 }
 h1 svg{
-    width: 25pt;
-    height: 25pt;
+    width: 35pt;
+    height: 35pt;
     fill: var(--primary-color);
 }
-
 .soleil{
-    width: 80%;
+    width: 95%;
     margin: auto;
     display: flex;
-    border: 2px solid blue;
+    flex-direction: column;
+    box-shadow: 0 0 0.5em 0.05em black; 
 }
 .location{
-    width: 50%;
-    margin: 0.5% 0% 0.5% 4%;
+    width: 95%;
+    margin: auto;
 }
 .location span{
     font-weight:600 ;
@@ -38,33 +35,35 @@ h1 svg{
 .emploi{
     padding: 3% 0 ;
     margin: 1.5% 0 0 0;
-    box-shadow: 0 0 0.02em 0.02em black;
+    border: 1px solid var(--primary-gray);
 }
 .but{
-    width: 5%;
+    width: 9%;
     border: none;
     color: white;
     padding: 1% 0.5%;
     border-radius: 2px;
-    margin: 0.5% 0% 0.5% 84%;
+    margin: 0.5% 0% 0.5% 85%;
     background-color: var(--primary-blue);
 } 
 .lova{
+    width: 95%;
+    margin: auto;
     flex-wrap: wrap;
     margin-bottom: 2%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .lova svg{
     fill: var(--primary-blue);
 }
 .map{
+    margin: 0 1% 0 1%;
     text-align: center;
 }
 iframe{
     width: 100%;
 }
-
-
+/*Responsive*/
 @media screen and (max-width:765px) {
     header{
         display: block;
@@ -73,5 +72,12 @@ iframe{
         width: 100%;
         display: block;
         background-color: saddlebrown;
+    }
+    .but{
+        width: 15%;
+        margin-left: 75%;
+    }
+    iframe{
+        height: 100px;
     }
 }
