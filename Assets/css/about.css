@@ -45,7 +45,11 @@ h1 svg{
     border-radius: 2px;
     margin: 0.5% 0% 0.5% 85%;
     background-color: var(--primary-blue);
-} 
+}
+.but:hover{
+    color: var(--primary-gray);
+    background-color: rgb(2, 57, 175);
+}
 .lova{
     width: 95%;
     margin: auto;

@@ -29,20 +29,29 @@ svg{
 header{
     background-color: var(--primary-color);
 }
-header h1{
+.laogo a{
+    text-decoration: none;
     color: var(--light-gray);
     text-shadow: 0.05em 0.05em 0.05em var(--primary-blue)
-}
-.bar h2{
-    color: var(--light-gray);
 }
 .bar{
     display: flex;
     align-items: center;
     justify-content: end;
+    text-decoration: none;
+}
+.bar a{
+    text-decoration: none;
+    color: var(--light-gray);
 }
 .bar svg{
     fill: var(--light-gray);
+}
+.bar svg:hover{
+    fill: var(--primary-gray);
+}
+header a:hover{
+    color:var(--primary-gray)
 }
 /*Premiere*/
 .su{
@@ -100,6 +109,9 @@ header h1{
 .Near{
     background-color: var(--primary-color);
 }
+.near{
+    background-color: var(--light-gray);
+}
 .text1{
     width: 70%;
     color: var(--light-gray);
@@ -110,6 +122,9 @@ header h1{
 }
 .Connect{
     background-color: var(--primary-gray);
+}
+.connect{
+    background-color: var(--light-gray);
 }
 .text1 .connect{
     border: none;
@@ -186,10 +201,16 @@ header h1{
     margin: 2% 0;
     padding: 1% 0;
     display: flex;
-    color: white;
     justify-content: center;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    color: var(--primary-gray);
 }
 .pied{
     display: flex;
@@ -203,6 +224,7 @@ header h1{
 #mail{
     padding: 2% 0;
     border: 1px solid grey;
+    color: var(--light-gray);
     background-color: rgba(0, 0, 0, 0);
 }
 .send{
@@ -213,9 +235,12 @@ header h1{
     border : 1px solid white;
     background-color:var(--gray-footer-btn);
 }
-.lien{
+.info a{
     font-weight: 400;
     text-decoration: none;
+    color: var(--primary-color);
+}
+.info a:hover{
     color: var(--primary-color);
 }
 .info span{
@@ -233,6 +258,18 @@ header h1{
 }
 .small img{
     width: 100%;
+}
+.icone a{
+    color: var(--primary-gray);
+}
+.icone a svg{
+    fill: var(--primary-gray);
+}
+.icone a:hover{
+    color: var(--primary-blue);
+}
+.icone a svg:hover{
+    fill: var(--primary-blue);
 }
 /*Rsponsive*/
 @media screen and (max-width:765px) {
