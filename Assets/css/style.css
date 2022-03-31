@@ -271,7 +271,7 @@ header a:hover{
 .icone a svg:hover{
     fill: var(--primary-blue);
 }
-/*Rsponsive*/
+/*Responsive*/
 @media screen and (max-width:765px) {
     header{
         display: block;
