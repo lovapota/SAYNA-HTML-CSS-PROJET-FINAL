@@ -86,7 +86,11 @@ figcaption{
         width: 100%;
     }
     .re, .clear {
-        font-size: small;
         width: auto;
+        font-size: small;
+    }
+    figcaption{
+        top: 20%;
+        font-size: 50px;
     }
 }

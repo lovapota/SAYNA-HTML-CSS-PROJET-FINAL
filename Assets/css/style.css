@@ -34,6 +34,9 @@ header{
     color: var(--light-gray);
     text-shadow: 0.05em 0.05em 0.05em var(--primary-blue)
 }
+.laogo img{
+    width: 50%;
+}
 .bar{
     display: flex;
     align-items: center;
@@ -206,8 +209,8 @@ header a:hover{
     border-bottom: 2px solid white;
 }
 .menu a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 .menu a:hover{
     color: var(--primary-gray);
@@ -241,6 +244,7 @@ header a:hover{
     color: var(--primary-color);
 }
 .info a:hover{
+    text-decoration: underline;
     color: var(--primary-color);
 }
 .info span{
